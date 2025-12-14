@@ -282,6 +282,7 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     LineageSdkKeyhandler \
     SettingsResCommon \
+    Launcher3ResCommon\
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon
