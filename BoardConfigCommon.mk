@@ -82,7 +82,8 @@ TARGET_KERNEL_CONFIG := \
     vendor/waipio_GKI.config \
     vendor/xiaomi_GKI.config \
     vendor/$(PRODUCT_DEVICE)_GKI.config \
-    vendor/debugfs.config
+    vendor/debugfs.config \
+    vendor/infinity.config
 
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
