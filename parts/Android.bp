@@ -35,6 +35,8 @@ android_app {
         "androidx.compose.runtime_runtime",
         "androidx.compose.ui_ui",
         "androidx.lifecycle_lifecycle-viewmodel-compose",
+        "androidx.lifecycle_lifecycle-runtime-ktx",
+        "androidx.lifecycle_lifecycle-service",
         "kotlinx-coroutines-core",
         "vendor.xiaomi.hardware.fingerprintextension-V1.0-java",
     ],
@@ -47,7 +49,6 @@ android_app {
 
     optimize: {
         enabled: true,
-        proguard_flags_files: ["proguard.flags"],
     },
 
     required: [
