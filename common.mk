@@ -5,8 +5,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-TARGET_SUPPORTS_OMX_SERVICE := false
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Add common definitions for Qualcomm
@@ -62,7 +61,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
-$(call soong_config_set, android_hardware_audio, run_64bit, true)
 
 $(foreach sku, taro diwali cape ukee parrot, \
     $(eval PRODUCT_COPY_FILES += \
@@ -158,14 +156,14 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti:64 \
-    android.hardware.gnss-aidl-impl-qti:64 \
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss-aidl-impl-qti \
     android.hardware.gnss-aidl-service-qti
 
 PRODUCT_PACKAGES += \
-    libbatching:64 \
-    libgeofencing:64 \
-    libgnss:64
+    libbatching \
+    libgeofencing \
+    libgnss
 
 PRODUCT_PACKAGES += \
     apdr.conf \
@@ -332,7 +330,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
-    sensors.xiaomi.v2:64
+    sensors.xiaomi.v2
 
 PRODUCT_PACKAGES += \
     sensor-notifier
@@ -479,7 +477,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     hostapd_cli \
-    libwifi-hal-qcom:64 \
+    libwifi-hal-qcom \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
