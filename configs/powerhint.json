@@ -390,7 +390,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigPlusClusterMinFreq",
       "Duration": 0,
-      "Value": "1536000"
+      "Value": "1651200"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -414,7 +414,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "364000000"
+      "Value": "439000000"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -468,7 +468,7 @@
       "PowerHint": "INTERACTION",
       "Node": "L3MinFreq",
       "Duration": 0,
-      "Value": "1267200"
+      "Value": "1593600"
     },
     {
       "PowerHint": "INTERACTION",
@@ -696,7 +696,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "1440000"
+      "Value": "1555200"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -708,7 +708,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "364000000"
+      "Value": "439000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -727,6 +727,18 @@
       "Node": "UclampTALatency",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "UclampFGMin",
+      "Duration": 0,
+      "Value": "30"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 0,
+      "Value": "44"
     },
     {
       "PowerHint": "Flipendo",
